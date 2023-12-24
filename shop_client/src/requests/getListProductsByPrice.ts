@@ -16,7 +16,7 @@ export const getListProductsByPrice = (idShop: number, price: number):Promise<IP
             }
             
         }).catch((e)=>{
-            alert("Ошибка HTTP: " + e)
+            // alert("Ошибка HTTP: " + e)
             reject("Ошибка HTTP: " + e);
         })
     })

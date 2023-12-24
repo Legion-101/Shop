@@ -37,30 +37,30 @@ public class ConnectionCSV : DataHandler{
         var lastShop = products.Last();
         products.Add(new Product(lastShop.ID + 1, _name));
     }
-    public void AddProductInShop(List<IProductsShop> _products){
-        foreach (var product in _products){
-            foreach (var item in products){
-                if(ShopProduct(product) == item)
-            } 
-        }
-        string sqlC = "";
-        if(res != null && int.Parse(res) == 0){
-            sqlC = $"INSERT INTO `Shop_Product` (ID_Shop, ID_Product, Price, Count) VALUES ({product.IdShop}, {product.IdProduct}, {product.PriceProduct}, {product.CountProduct})";
-        }else{
-            if(product.PriceProduct != null){
-                sqlC = $"UPDATE `Shop_Product` SET Price={product.PriceProduct}, Count=Count+{product.CountProduct} WHERE ID_Shop={product.IdShop} AND ID_Product={product.IdProduct}";
-            }else{
-                sqlC = $"UPDATE `Shop_Product` SET Count=Count+{product.CountProduct} WHERE ID_Shop={product.IdShop} AND ID_Product={product.IdProduct}";
+    // public void AddProductInShop(List<IProductsShop> _products){
+    //     foreach (var product in _products){
+    //         foreach (var item in products){
+    //             if(ShopProduct(product) == item)
+    //         } 
+    //     }
+    //     string sqlC = "";
+    //     if(res != null && int.Parse(res) == 0){
+    //         sqlC = $"INSERT INTO `Shop_Product` (ID_Shop, ID_Product, Price, Count) VALUES ({product.IdShop}, {product.IdProduct}, {product.PriceProduct}, {product.CountProduct})";
+    //     }else{
+    //         if(product.PriceProduct != null){
+    //             sqlC = $"UPDATE `Shop_Product` SET Price={product.PriceProduct}, Count=Count+{product.CountProduct} WHERE ID_Shop={product.IdShop} AND ID_Product={product.IdProduct}";
+    //         }else{
+    //             sqlC = $"UPDATE `Shop_Product` SET Count=Count+{product.CountProduct} WHERE ID_Shop={product.IdShop} AND ID_Product={product.IdProduct}";
 
-            }
+    //         }
             
-        }
-    }
-    public Shop GetShopWithCheapProduct(int _idProduct);
-    public List<ShopProduct> GetProductsByPrice(int _idShop, float _price);
-    public float BuyProducts(int _idShop, List<IListProduct> _products);
-    public IShopByListProducts GetShopWithCheapListProduct(List<IListProduct> _products);
-    public List<Product> GetAllProducts(){
-        return products;
-    }
+    //     }
+    // }
+    // public Shop GetShopWithCheapProduct(int _idProduct);
+    // public List<ShopProduct> GetProductsByPrice(int _idShop, float _price);
+    // public float BuyProducts(int _idShop, List<IListProduct> _products);
+    // public IShopByListProducts GetShopWithCheapListProduct(List<IListProduct> _products);
+    // public List<Product> GetAllProducts(){
+    //     return products;
+    // }
 }

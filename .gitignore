@@ -1,5 +1,5 @@
 # dependencies
-/node_modules
+/shop_client/node_modules
 /.pnp
 .pnp.js
 

@@ -17,7 +17,7 @@ export const buyProduct = (idShop: number, listProduct: IProductData[]):Promise<
             }
             
         }).catch((e)=>{
-            alert("Ошибка HTTP: " + e)
+            // alert("Ошибка HTTP: " + e)
             reject("Ошибка HTTP: " + e);
         })
     })

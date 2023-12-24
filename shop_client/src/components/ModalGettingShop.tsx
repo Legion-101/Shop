@@ -23,30 +23,30 @@ export const ModalGettingShop = ({open, shop, handleClose, summ}: {open: boolean
             aria-describedby="modal-modal-description"
         >
         <Box sx={styleModal}>
-          <Typography id="modal-modal-title" variant="h5" component="h2" sx={{mb:2}}>
+          <Typography sx={{color:'white', mb:2}} id="modal-modal-title" variant="h5" component="h2" >
             Результат запроса:
           </Typography>
           {
             shop ?
             <>
-                <Typography sx={{ fontSize: 14 }}>
+                <Typography sx={{ fontSize: 14, color:'white'}}>
                     ID: {shop.ID}
                 </Typography>
-                <Typography variant="h6" component="div">
+                <Typography sx={{color:'white'}} variant="h6" component="div">
                     "{shop.Name}"
                 </Typography>
-                <Typography variant="body2">
+                <Typography sx={{color:'white'}} variant="body2">
                     Адрес: {shop.Address}
                 </Typography>
                 {
                   summ ?
-                  <Typography variant="body1">
+                  <Typography sx={{color:'white'}} variant="body1">
                     Стоимость: {summ} р.
                   </Typography>
                   : undefined
                 }
             </>
-            : <Typography>Магазин не найден</Typography>
+            : <Typography sx={{color:'white'}}>Магазин не найден</Typography>
           }
         </Box>
       </Modal>

@@ -11,7 +11,7 @@ export const createProduct = (name: string) => {
         }).then((res)=>{
             resolve(true)
         }).catch((e)=>{
-            alert("Ошибка HTTP: " + e)
+            // alert("Ошибка HTTP: " + e)
             reject("Ошибка HTTP: " + e);
         })
     })

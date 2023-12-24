@@ -12,7 +12,7 @@ export const addProductInShop = (products: IProductsShop[]) => {
         }).then((res)=>{
             resolve(true)
         }).catch((e)=>{
-            alert("Ошибка HTTP: " + e)
+            // alert("Ошибка HTTP: " + e)
             reject("Ошибка HTTP: " + e);
         })
     })

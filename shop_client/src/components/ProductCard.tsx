@@ -5,7 +5,7 @@ export const ProductCard = ({name, count}: {name: string, count?: number}) => {
         <Box sx={{ width: "100%" }}>
         <Card variant="outlined">
             <CardContent>
-                <Typography variant="body2">
+                <Typography sx={{color:'white'}} variant="body2">
                 {name}: {count} шт.
                 </Typography>
             </CardContent>

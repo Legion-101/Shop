@@ -15,7 +15,7 @@ export const getShopWithListCheapProducts = (products: IProductData[]): Promise<
             }
             
         }).catch((e)=>{
-            alert("Ошибка HTTP: " + e)
+            // alert("Ошибка HTTP: " + e)
             reject("Ошибка HTTP: " + e);
         })
     })

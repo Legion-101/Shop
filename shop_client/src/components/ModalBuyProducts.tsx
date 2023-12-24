@@ -12,11 +12,11 @@ export const ModalBuyProducts = ({summ, isOpen, handleClose}: {summ: number|unde
         <Box sx={styleModal}>
             {
                 summ ?
-                <Typography variant="body2">
+                <Typography sx={{color:'white'}} variant="body2">
                     Сумма покупки: {summ} р.
                 </Typography>
                 :
-                <Typography variant="body2">
+                <Typography sx={{color:'white'}} variant="body2">
                     Невозможно совершить покупку: указанное колличество товаров превышает колличество товаров в магазине.
                 </Typography>
             }

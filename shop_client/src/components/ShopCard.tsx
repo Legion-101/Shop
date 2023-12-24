@@ -13,13 +13,13 @@ export const ShopCard = ({ shop, setShop }: {shop: IShop, setShop: (val: IShop)=
     <Box sx={{ width: "100%" }}>
         <Card variant="outlined">
             <CardContent>
-                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                <Typography sx={{ fontSize: 14, color:'white'}} color="text.secondary" gutterBottom>
                     ID: {ID}
                 </Typography>
-                <Typography variant="h5" component="div">
+                <Typography sx={{color:'white'}} variant="h5" component="div">
                     {Name}
                 </Typography>
-                <Typography variant="body2">
+                <Typography sx={{color:'white'}} variant="body2">
                 Адрес: {Address}
                 </Typography>
             </CardContent>

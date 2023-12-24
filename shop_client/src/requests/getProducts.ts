@@ -14,7 +14,7 @@ export const getProducts = (): Promise<IProduct[]> => {
             }
             
         }).catch((e)=>{
-            alert("Ошибка HTTP: " + e)
+            // alert("Ошибка HTTP: " + e)
             reject("Ошибка HTTP: " + e);
         })
     })

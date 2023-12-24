@@ -71,7 +71,7 @@ export const BuyProducts = () => {
 
             {
                 listProducts.length ?
-                <Typography>Товары:</Typography>
+                <Typography sx={{color:'white'}}>Товары:</Typography>
                 : undefined
             }
             <TableContainer component={Paper}>

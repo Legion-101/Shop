@@ -44,7 +44,7 @@ console.log(res)
                 (res && res.length) ?
                     res.map((item)=> <ProductCard key={item.ID} name={item.Name} count={item.Count} />)
                     : (res && !res.length) ?
-                    <Typography>Товары не найдены</Typography>
+                    <Typography sx={{color:'white'}}>Товары не найдены</Typography>
                     : null
             }
 

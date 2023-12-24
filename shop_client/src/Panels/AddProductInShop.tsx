@@ -73,7 +73,7 @@ export const AddProductInShop = () => {
         <Stack spacing={2}>
             <SelectShop shop={shop} setShop={setShop} />
 
-            <Typography>Товары:</Typography>
+            <Typography sx={{color:'white'}}>Товары:</Typography>
             <TableContainer component={Paper}>
                 <Table size="small" aria-label="a dense table">
                     <TableBody>
