@@ -2,7 +2,7 @@ using System.Data;
 using MySql.Data.MySqlClient;
 
 public class ConnectionDataBase : DataHandler {
-    private string connectionStr = "server=localhost;user=root;database=shop;password=root;";
+    private string connectionStr = "server=localhost,port=3306;user=root;database=shop;password=root;";
     public MySqlConnection connection ;
         public ConnectionDataBase(){
         connection = new MySqlConnection(connectionStr);
