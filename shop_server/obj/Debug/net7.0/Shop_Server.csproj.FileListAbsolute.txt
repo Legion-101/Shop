@@ -1,0 +1,6 @@
+C:\IFMO\1_kurs\OOP\Shop\shop_server\obj\Debug\net7.0\Shop_Server.csproj.AssemblyReference.cache
+C:\IFMO\1_kurs\OOP\Shop\shop_server\obj\Debug\net7.0\Shop_Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\IFMO\1_kurs\OOP\Shop\shop_server\obj\Debug\net7.0\Shop_Server.AssemblyInfoInputs.cache
+C:\IFMO\1_kurs\OOP\Shop\shop_server\obj\Debug\net7.0\Shop_Server.AssemblyInfo.cs
+C:\IFMO\1_kurs\OOP\Shop\shop_server\obj\Debug\net7.0\Shop_Server.csproj.CoreCompileInputs.cache
+C:\IFMO\1_kurs\OOP\Shop\shop_server\obj\Debug\net7.0\Shop_Server.sourcelink.json
